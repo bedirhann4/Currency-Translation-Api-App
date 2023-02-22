@@ -43,7 +43,7 @@ function exchangerates_data(c_to,c_from,c_amount){
     c_amount = amount.value;
     const url = `https://api.apilayer.com/exchangerates_data/convert?to=${c_to}&from=${c_from}&amount=${c_amount}`;
     const myHeaders = new Headers();
-    myHeaders.append("apikey", "lW1bDX0cUKonyMxGyNedWvbMdMyTfs5j");
+    myHeaders.append("apikey", "<Api_Key_Area>");
     const requestOptions = {
     method: 'GET',
     headers: myHeaders,
