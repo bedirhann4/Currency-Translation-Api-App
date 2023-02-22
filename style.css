@@ -1,0 +1,9 @@
+#conclusion-bottom-area{
+    opacity: 0;
+}
+#spinner{
+    display: none;
+}
+#select1,#select2,#select3{
+    color: red;
+}

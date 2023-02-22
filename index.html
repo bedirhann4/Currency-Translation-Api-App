@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>Currency Translation</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-10 m-auto">
+                <h5>Select Currency to Translate</h5>
+                <select class="form-select" id="from">
+                    <option selected disabled value="0">Please Select Currency</option>
+                    <option value="TRY">Turkish Lira</option>
+                    <option value="EUR">Euro</option>
+                    <option value="USD">United States Dollar</option>
+                    <option value="AED">United Arab Emirates Dirham</option>
+                    <option value="AUD">Australian Dollar</option>
+                    <option value="AZN">Azerbaijani Manat</option>
+                    <option value="BGN">Bulgarian Lev</option>
+                    <option value="CAD">Canadian Dollar</option>
+                    <option value="CNY">Chinese Yuan</option>
+                    <option value="GBP">British Pound Sterling</option>
+                    <option value="INR">Indian Rupee</option>
+                    <option value="ISK">Icelandic Króna</option>
+                    <option value="JPY">Japanese Yen</option>
+                    <option value="KPW">North Korean Won</option>
+                    <option value="KRW">South Korean Won</option>
+                    <option value="KWD">Kuwaiti Dinar</option>
+                    <option value="QAR">Qatari Rial</option>
+                    <option value="RUB">Russian Ruble</option>
+                    <option value="UAH">Ukrainian Hryvnia</option>
+                    <option value="NOK">Norway Króna</option>
+                </select>
+                <div id="select1"></div>
+                <hr>
+                <h5>Converted Currency</h5>
+                <select class="form-select" id="to">
+                    <option selected disabled value="0">Please Select Currency</option>
+                    <option value="TRY">Turkish Lira</option>
+                    <option value="EUR">Euro</option>
+                    <option value="USD">United States Dollar</option>
+                    <option value="AED">United Arab Emirates Dirham</option>
+                    <option value="AUD">Australian Dollar</option>
+                    <option value="AZN">Azerbaijani Manat</option>
+                    <option value="BGN">Bulgarian Lev</option>
+                    <option value="CAD">Canadian Dollar</option>
+                    <option value="CNY">Chinese Yuan</option>
+                    <option value="GBP">British Pound Sterling</option>
+                    <option value="INR">Indian Rupee</option>
+                    <option value="ISK">Icelandic Króna</option>
+                    <option value="JPY">Japanese Yen</option>
+                    <option value="KPW">North Korean Won</option>
+                    <option value="KRW">South Korean Won</option>
+                    <option value="KWD">Kuwaiti Dinar</option>
+                    <option value="QAR">Qatari Rial</option>
+                    <option value="RUB">Russian Ruble</option>
+                    <option value="UAH">Ukrainian Hryvnia</option>
+                    <option value="NOK">Norway Króna</option>
+                </select>
+                <div id="select2"></div>
+                <hr>
+                <h5>Enter Amount</h5>
+                <input class="form-control" type="number" id="amount">
+                <div id="select3"></div>
+                <button id="change" type="button" class="btn btn-primary mt-3">Convert
+                    <div id="spinner" class="spinner-border spinner-border-sm" role="status">
+                        <span class="visually-hidden"></span>
+                    </div>
+                </button>
+                <hr>
+                <div id="conclusion-bottom-area">
+                    <div><em id="translatedAmount"> </em><em id="unit-price"> </em>: <strong id="conclusion"></strong></div>
+                    <div><em>1 <span id="unit-price2"></span>: </em><strong id="unitPrice"></strong></div>
+                    <div><em>Translated Time: </em><strong id="timeDate"></strong></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+</body>
+</html>
